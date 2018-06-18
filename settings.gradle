@@ -10,3 +10,4 @@
 rootProject.name = 'OrchidTutorials'
 
 include '01'
+include '02'
