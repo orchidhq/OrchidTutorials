@@ -1,11 +1,11 @@
 ## Location
 
-Dallas, TX
+Houston, TX
 
 ## Address
  
 1234, Example Dr.
-Dallas, TX, 12345
+Houston, TX, 12345
 
 ## Phone
 
