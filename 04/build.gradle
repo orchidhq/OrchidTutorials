@@ -41,6 +41,7 @@ dependencies {
 // 2. Get Orchid from Jcenter, Bintray, and Jitpack
 repositories {
     jcenter()
+    mavenLocal()
     maven { url 'https://dl.bintray.com/javaeden/Orchid/' }
     maven { url 'https://jitpack.io' }
 }
