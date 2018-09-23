@@ -8,7 +8,7 @@ business_hours:
   - 'M-F: 6am - 9pm'
   - 'Sa: 6am - 10pm'
   - 'Su: Closed'
-templates:
+template:
   - 'location' 
 ---
 

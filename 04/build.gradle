@@ -3,13 +3,13 @@
  *
  * This generated file contains a sample Java Library project to get you started.
  * For more details take a look at the Java Libraries chapter in the Gradle
- * user guide available at https://docs.gradle.org/4.6/userguide/java_library_plugin.html
+ * user guide available at https://docs.gradle.org/4.10.2/userguide/java_library_plugin.html
  */
 
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
-    id "com.eden.orchidPlugin" version "0.8.11"
+    id "com.eden.orchidPlugin" version "0.12.1"
 }
 
 dependencies {
@@ -35,13 +35,15 @@ repositories {
 
 // 1. Include all official Orchid plugins and themes
 dependencies {
-    orchidCompile "io.github.javaeden.orchid:OrchidAll:0.8.11"
+    orchidCompile "io.github.javaeden.orchid:OrchidCore:0.12.1"
+    orchidCompile "io.github.javaeden.orchid:OrchidBsDoc:0.12.1"
+    orchidCompile "io.github.javaeden.orchid:OrchidPages:0.12.1"
+    orchidCompile "io.github.javaeden.orchid:OrchidAsciidoc:0.12.1"
 }
 
 // 2. Get Orchid from Jcenter, Bintray, and Jitpack
 repositories {
     jcenter()
-    mavenLocal()
     maven { url 'https://dl.bintray.com/javaeden/Orchid/' }
     maven { url 'https://jitpack.io' }
 }
