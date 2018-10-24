@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.javaeden.orchid</groupId>
+        <artifactId>OrchidTutorials</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>01</artifactId>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.github.javaeden.orchid</groupId>
+                <artifactId>orchid-maven-plugin</artifactId>
+                <version>${orchid.version}</version>
+
+                <!-- 1. Include all official Orchid plugins and themes -->
+                <dependencies>
+                    <dependency>
+                        <groupId>io.github.javaeden.orchid</groupId>
+                        <artifactId>OrchidCore</artifactId>
+                        <version>${orchid.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>io.github.javaeden.orchid</groupId>
+                        <artifactId>OrchidBsDoc</artifactId>
+                        <version>${orchid.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>io.github.javaeden.orchid</groupId>
+                        <artifactId>OrchidPages</artifactId>
+                        <version>${orchid.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>io.github.javaeden.orchid</groupId>
+                        <artifactId>OrchidAsciidoc</artifactId>
+                        <version>${orchid.version}</version>
+                    </dependency>
+
+                    <!-- This solves a conflict between transitive dependencies
+                         in versions 2.0.0 and 2.0.4 -->
+                    <dependency>
+                        <groupId>com.eden</groupId>
+                        <artifactId>Clog</artifactId>
+                        <version>2.0.4</version>
+                    </dependency>
+                </dependencies>
+
+                <!-- 3. Use the 'BsDoc' theme, and view the site locally at 'http://localhost:8080' -->
+                <configuration>
+                    <theme>BsDoc</theme>
+                    <baseUrl>http://localhost:8080</baseUrl>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- 2. Get Orchid from Jcenter, Bintray, and Jitpack -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jcenter</id>
+            <url>https://dl.bintray.com/javaeden/Orchid</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>jcenter2</id>
+            <url>https://dl.bintray.com/javaeden/Eden</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>jitpack</id>
+            <url>https://jitpack.io</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>
