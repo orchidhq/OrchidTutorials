@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>io.github.javaeden.orchid</groupId>
-        <artifactId>OrchidTutorials</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
+    <properties>
+        <orchid.version>0.14.0</orchid.version>
+    </properties>
 
+    <groupId>io.github.javaeden.orchid</groupId>
     <artifactId>01</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -64,10 +64,19 @@
     <pluginRepositories>
         <pluginRepository>
             <id>jcenter</id>
+            <name>bintray-plugins</name>
+            <url>http://jcenter.bintray.com</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>kotlinx</id>
+            <url>https://kotlin.bintray.com/kotlinx</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>orchid-bintray</id>
             <url>https://dl.bintray.com/javaeden/Orchid</url>
         </pluginRepository>
         <pluginRepository>
-            <id>jcenter2</id>
+            <id>eden-bintray</id>
             <url>https://dl.bintray.com/javaeden/Eden</url>
         </pluginRepository>
         <pluginRepository>

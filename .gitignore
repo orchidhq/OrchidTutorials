@@ -12,6 +12,7 @@ out/
 # Gradle files
 .gradle/
 build/
+target/
 /classes/
 
 
