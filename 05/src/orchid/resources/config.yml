@@ -1,0 +1,9 @@
+theme:
+  primaryColor: '#dd9999'
+  menu:
+    - type: 'page'
+      itemId: 'Locations'
+    - type: 'page'
+      itemId: 'Services'
+    - type: 'page'
+      itemId: 'Staff'
