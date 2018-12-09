@@ -8,8 +8,7 @@ business_hours:
   - 'M-F: 6am - 9pm'
   - 'Sa: 6am - 10pm'
   - 'Su: Closed'
-template:
-  - 'location' 
+template: 'location' 
 ---
 
 Houston, TX location coming soon.

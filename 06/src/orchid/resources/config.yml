@@ -1,0 +1,27 @@
+theme:
+  primaryColor: '#dd9999'
+  menu:
+    - type: 'page'
+      itemId: 'Locations'
+    - type: 'page'
+      itemId: 'Services'
+    - type: 'page'
+      itemId: 'Staff'
+
+allPages:
+  template: 'page'
+  menu:
+    - type: pageIds
+      structure: nested
+      order: 1
+
+pages:
+  locations:
+    template: 'location'
+    menu:
+      - type: separator
+        title: 'All Locations'
+        order: 2
+      - type: pages
+        group: 'locations'
+        order: 3
