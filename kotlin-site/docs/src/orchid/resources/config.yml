@@ -1,0 +1,40 @@
+
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#DE9149'
+  social:
+    github: 'username/project'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+    - type: 'separator'
+      title: 'API Docs'
+    - type: 'kotlindocPackages'
+    - type: 'kotlindocClasses'
+
+kotlindoc:
+  sourceDirs:
+    - './../../../../app/src/main/kotlin'
+  pages:
+    extraCss:
+      - 'assets/css/orchidKotlindoc.scss'
+    menu:
+      - type: "kotlindocClassLinks"
+        includeItems: true
+
+services:
+  publications:
+    stages:
+      ghPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+      githubReleases:
+        repo: 'username/project'

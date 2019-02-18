@@ -16,3 +16,6 @@ include '04'
 include '05'
 include '06'
 include '07'
+
+include ':kotlin-site:app'
+include ':kotlin-site:docs'

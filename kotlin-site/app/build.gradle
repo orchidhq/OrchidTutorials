@@ -1,0 +1,13 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+    id 'application'
+}
+repositories {
+    jcenter()
+}
+dependencies {
+    compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.21'
+}
+application {
+    mainClassName = 'com.example.MainKt'
+}
