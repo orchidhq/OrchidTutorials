@@ -17,5 +17,14 @@ include '05'
 include '06'
 include '07'
 
+include ':groovy-site:app'
+include ':groovy-site:docs'
+
+include ':java-site:app'
+include ':java-site:docs'
+
 include ':kotlin-site:app'
 include ':kotlin-site:docs'
+
+include ':swift-site:app'
+include ':swift-site:docs'

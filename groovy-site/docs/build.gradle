@@ -5,7 +5,7 @@ plugins {
 // 1. Include all official Orchid plugins and themes
 dependencies {
     orchidCompile "io.github.javaeden.orchid:OrchidDocs:0.16.10"
-    orchidCompile "io.github.javaeden.orchid:OrchidKotlindoc:0.16.10"
+    orchidCompile "io.github.javaeden.orchid:OrchidGroovydoc:0.16.10"
     orchidCompile "io.github.javaeden.orchid:OrchidPluginDocs:0.16.10"
 }
 

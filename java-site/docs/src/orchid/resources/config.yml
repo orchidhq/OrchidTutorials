@@ -1,0 +1,40 @@
+
+site:
+  about:
+    siteName: Java Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#D24231'
+  social:
+    github: 'username/project'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+    - type: 'separator'
+      title: 'API Docs'
+    - type: 'javadocPackages'
+    - type: 'javadocClasses'
+
+javadoc:
+  sourceDirs:
+    - './../../../../app/src/main/java'
+  pages:
+    extraCss:
+      - 'assets/css/orchidJavadoc.scss'
+    menu:
+      - type: "javadocClassLinks"
+        includeItems: true
+
+services:
+  publications:
+    stages:
+      ghPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+      githubReleases:
+        repo: 'username/project'

@@ -1,0 +1,40 @@
+
+site:
+  about:
+    siteName: Groovy Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#6796B2'
+  social:
+    github: 'username/project'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+    - type: 'separator'
+      title: 'API Docs'
+    - type: 'groovydocPackages'
+    - type: 'groovydocClasses'
+
+groovydoc:
+  sourceDirs:
+    - './../../../../app/src/main/groovy'
+  pages:
+    extraCss:
+      - 'assets/css/orchidGroovydoc.scss'
+    menu:
+      - type: "groovydocClassLinks"
+        includeItems: true
+
+services:
+  publications:
+    stages:
+      ghPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+      githubReleases:
+        repo: 'username/project'

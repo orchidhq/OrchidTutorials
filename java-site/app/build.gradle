@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+repositories {
+    jcenter()
+}
+dependencies {
+
+}
+application {
+    mainClassName = 'com.example.MainJava'
+}

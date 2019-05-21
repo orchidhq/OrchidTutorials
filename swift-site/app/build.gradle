@@ -1,0 +1,10 @@
+plugins {
+    id 'swift-application'
+}
+
+task run(type: Exec) {
+    dependsOn 'assemble'
+
+    workingDir "$project.buildDir/install/main/debug"
+    commandLine './App'
+}

@@ -1,0 +1,39 @@
+
+site:
+  about:
+    siteName: Swift Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#DB6647'
+  social:
+    github: 'username/project'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+    - type: 'separator'
+      title: 'API Docs'
+    - {type: 'swiftdocPages', title: 'All Classes', docType: 'class'}
+    - {type: 'swiftdocPages', title: 'All Structs', docType: 'struct'}
+    - {type: 'swiftdocPages', title: 'All Enums', docType: 'enum'}
+    - {type: 'swiftdocPages', title: 'All Protocols', docType: 'protocol'}
+    - {type: 'swiftdocPages', title: 'All Globals', docType: 'global'}
+
+swiftdoc:
+  baseDir: './../../../../app/src/main/swift'
+allPages:
+  extraCss:
+    - 'assets/css/orchidSwiftdoc.scss'
+
+services:
+  publications:
+    stages:
+      ghPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+      githubReleases:
+        repo: 'username/project'
