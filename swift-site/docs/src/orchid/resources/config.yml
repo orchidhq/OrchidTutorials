@@ -31,7 +31,7 @@ allPages:
 services:
   publications:
     stages:
-      ghPages:
+      githubPages:
         branch: gh-pages
         repo: 'project'
         username: 'username'
