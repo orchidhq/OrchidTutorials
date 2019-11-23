@@ -27,7 +27,7 @@ proguard/
 
 # Intellij
 *.iml
-.idea/workspace.xml
+.idea/
 Orchid.iws
 Orchid.ipr
 
@@ -36,3 +36,6 @@ Orchid.ipr
 
 # Google Analytics
 /**/templates/meta.*
+
+# Other
+.DS_Store

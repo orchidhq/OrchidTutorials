@@ -4,14 +4,15 @@ plugins {
 
 // 1. Include all official Orchid plugins and themes
 dependencies {
-    orchidCompile "io.github.javaeden.orchid:OrchidDocs:0.17.6"
-    orchidCompile "io.github.javaeden.orchid:OrchidKotlindoc:0.17.6"
-    orchidCompile "io.github.javaeden.orchid:OrchidPluginDocs:0.17.6"
-    orchidCompile "io.github.javaeden.orchid:OrchidGithub:0.17.6"
+    orchidCompile "io.github.javaeden.orchid:OrchidDocs:0.18.0-SNAPSHOT"
+    orchidCompile "io.github.javaeden.orchid:OrchidKotlindoc:0.18.0-SNAPSHOT"
+    orchidCompile "io.github.javaeden.orchid:OrchidPluginDocs:0.18.0-SNAPSHOT"
+    orchidCompile "io.github.javaeden.orchid:OrchidGithub:0.18.0-SNAPSHOT"
 }
 
 // 2. Get Orchid from Jcenter
 repositories {
+    mavenLocal()
     jcenter()
     maven { url = "https://kotlin.bintray.com/kotlinx/" }
 }
@@ -21,4 +22,5 @@ orchid {
     theme = "Editorial"
     baseUrl = "http://username.github.io/project"
     version = "1.0.0"
+    args = ["--experimentalSourceDoc"]
 }

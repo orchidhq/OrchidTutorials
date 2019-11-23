@@ -4,10 +4,13 @@ site:
     siteName: Java Project
     siteDescription: This is a short description of this project.
 
-Editorial:
+theme:
   primaryColor: '#D24231'
+  legacySearch: false
   social:
     github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
   menu:
     - type: 'separator'
       title: 'Wiki'
@@ -16,17 +19,25 @@ Editorial:
       itemId: 'Changelog'
     - type: 'separator'
       title: 'API Docs'
-    - type: 'javadocPackages'
-    - type: 'javadocClasses'
+    - type: 'sourcedocPages'
+      moduleType: 'javadoc'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'javadoc'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'Packages'
 
 javadoc:
   sourceDirs:
     - './../../../../app/src/main/java'
   pages:
-    extraCss:
-      - 'assets/css/orchidJavadoc.scss'
     menu:
-      - type: "javadocClassLinks"
+      - type: 'sourcedocPageLinks'
+        moduleType: 'javadoc'
+        itemTitleType: 'SIGNATURE'
         includeItems: true
 
 services:

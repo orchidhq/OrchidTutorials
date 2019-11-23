@@ -1,0 +1,8 @@
+sourceDirs:
+  - './../../../../java-site/app/src/main/java'
+pages:
+  menu:
+    - type: 'sourcedocPageLinks'
+      moduleType: 'javadoc'
+      itemTitleType: 'SIGNATURE'
+      includeItems: true

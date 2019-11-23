@@ -3,7 +3,7 @@ import Darwin
 /**
  An Application that can be run with arbitrary arguments.
  */
-protocol Application {
+public protocol Application {
     /**
      The name of the application
      */
@@ -23,7 +23,7 @@ protocol Application {
     func start(_ args: String...)
 }
 
-class ExampleApplication : Application {
+public class ExampleApplication : Application {
     var version: String = "1.0.0"
     var name: String = "Example Swift Application"
 

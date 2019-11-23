@@ -1,0 +1,8 @@
+sourceDirs:
+  - './../../../../kotlin-site/app/src/main/kotlin'
+pages:
+  menu:
+    - type: 'sourcedocPageLinks'
+      moduleType: 'kotlindoc'
+      itemTitleType: 'SIGNATURE'
+      includeItems: true

@@ -1,0 +1,8 @@
+sourceDirs:
+  - './../../../../swift-site/app/src/main/swift'
+pages:
+  menu:
+    - type: 'sourcedocPageLinks'
+      moduleType: 'swiftdoc'
+      itemTitleType: 'SIGNATURE'
+      includeItems: true

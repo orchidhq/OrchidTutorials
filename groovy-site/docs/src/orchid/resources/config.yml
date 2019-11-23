@@ -4,10 +4,13 @@ site:
     siteName: Groovy Project
     siteDescription: This is a short description of this project.
 
-Editorial:
+theme:
   primaryColor: '#6796B2'
+  legacySearch: false
   social:
     github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
   menu:
     - type: 'separator'
       title: 'Wiki'
@@ -16,17 +19,25 @@ Editorial:
       itemId: 'Changelog'
     - type: 'separator'
       title: 'API Docs'
-    - type: 'groovydocPackages'
-    - type: 'groovydocClasses'
+    - type: 'sourcedocPages'
+      moduleType: 'groovydoc'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'groovydoc'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'Packages'
 
 groovydoc:
   sourceDirs:
     - './../../../../app/src/main/groovy'
   pages:
-    extraCss:
-      - 'assets/css/orchidGroovydoc.scss'
     menu:
-      - type: "groovydocClassLinks"
+      - type: 'sourcedocPageLinks'
+        moduleType: 'groovydoc'
+        itemTitleType: 'SIGNATURE'
         includeItems: true
 
 services:

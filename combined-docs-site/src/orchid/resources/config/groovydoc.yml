@@ -1,0 +1,8 @@
+sourceDirs:
+  - './../../../../groovy-site/app/src/main/groovy'
+pages:
+  menu:
+    - type: 'sourcedocPageLinks'
+      moduleType: 'groovydoc'
+      itemTitleType: 'SIGNATURE'
+      includeItems: true

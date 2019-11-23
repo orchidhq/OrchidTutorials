@@ -28,3 +28,7 @@ include ':kotlin-site:docs'
 
 include ':swift-site:app'
 include ':swift-site:docs'
+
+include ':combined-docs-site'
+
+include ':blog-site'

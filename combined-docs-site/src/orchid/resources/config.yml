@@ -1,0 +1,82 @@
+site:
+  about:
+    siteName: Combined Docs Project
+    siteDescription: This is a short description of this project.
+
+theme:
+  primaryColor: '#DB6647'
+  legacySearch: false
+  social:
+    github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+    - type: 'separator'
+      title: 'API Docs'
+    - type: 'submenu'
+      title: 'Javadoc'
+      menu:
+        - type: 'sourcedocPages'
+          moduleType: 'javadoc'
+          node: 'classes'
+          asSubmenu: true
+          submenuTitle: 'Classes'
+        - type: 'sourcedocPages'
+          moduleType: 'javadoc'
+          node: 'packages'
+          asSubmenu: true
+          submenuTitle: 'Packages'
+    - type: 'submenu'
+      title: 'Groovydoc'
+      menu:
+        - type: 'sourcedocPages'
+          moduleType: 'groovydoc'
+          node: 'classes'
+          asSubmenu: true
+          submenuTitle: 'Classes'
+        - type: 'sourcedocPages'
+          moduleType: 'groovydoc'
+          node: 'packages'
+          asSubmenu: true
+          submenuTitle: 'Packages'
+    - type: 'submenu'
+      title: 'Kotlindoc'
+      menu:
+        - type: 'sourcedocPages'
+          moduleType: 'kotlindoc'
+          node: 'classes'
+          asSubmenu: true
+          submenuTitle: 'Classes'
+        - type: 'sourcedocPages'
+          moduleType: 'kotlindoc'
+          node: 'packages'
+          asSubmenu: true
+          submenuTitle: 'Packages'
+    - type: 'submenu'
+      title: 'Swiftdoc'
+      menu:
+        - type: 'sourcedocPages'
+          moduleType: 'swiftdoc'
+          node: 'classes'
+          asSubmenu: true
+          submenuTitle: 'Classes'
+        - type: 'sourcedocPages'
+          moduleType: 'swiftdoc'
+          node: 'sourceFiles'
+          asSubmenu: true
+          submenuTitle: 'Source Files'
+
+services:
+  publications:
+    stages:
+      githubPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+      githubReleases:
+        repo: 'username/project'

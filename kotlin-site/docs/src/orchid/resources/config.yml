@@ -4,10 +4,13 @@ site:
     siteName: Kotlin Project
     siteDescription: This is a short description of this project.
 
-Editorial:
+theme:
   primaryColor: '#DE9149'
+  legacySearch: false
   social:
     github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
   menu:
     - type: 'separator'
       title: 'Wiki'
@@ -16,17 +19,25 @@ Editorial:
       itemId: 'Changelog'
     - type: 'separator'
       title: 'API Docs'
-    - type: 'kotlindocPackages'
-    - type: 'kotlindocClasses'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'Packages'
 
 kotlindoc:
   sourceDirs:
     - './../../../../app/src/main/kotlin'
   pages:
-    extraCss:
-      - 'assets/css/orchidKotlindoc.scss'
     menu:
-      - type: "kotlindocClassLinks"
+      - type: 'sourcedocPageLinks'
+        moduleType: 'kotlindoc'
+        itemTitleType: 'SIGNATURE'
         includeItems: true
 
 services:

@@ -4,10 +4,13 @@ site:
     siteName: Swift Project
     siteDescription: This is a short description of this project.
 
-Editorial:
+theme:
   primaryColor: '#DB6647'
+  legacySearch: false
   social:
     github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
   menu:
     - type: 'separator'
       title: 'Wiki'
@@ -16,17 +19,27 @@ Editorial:
       itemId: 'Changelog'
     - type: 'separator'
       title: 'API Docs'
-    - {type: 'swiftdocPages', title: 'All Classes', docType: 'class'}
-    - {type: 'swiftdocPages', title: 'All Structs', docType: 'struct'}
-    - {type: 'swiftdocPages', title: 'All Enums', docType: 'enum'}
-    - {type: 'swiftdocPages', title: 'All Protocols', docType: 'protocol'}
-    - {type: 'swiftdocPages', title: 'All Globals', docType: 'global'}
+    - type: 'sourcedocPages'
+      moduleType: 'swiftdoc'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'swiftdoc'
+      node: 'sourceFiles'
+      asSubmenu: true
+      submenuTitle: 'Source Files'
 
 swiftdoc:
-  baseDir: './../../../../app/src/main/swift'
-allPages:
-  extraCss:
-    - 'assets/css/orchidSwiftdoc.scss'
+  showRunnerLogs: true
+  sourceDirs:
+    - './../../../../app/src/main/swift'
+  pages:
+    menu:
+      - type: 'sourcedocPageLinks'
+        moduleType: 'swiftdoc'
+        itemTitleType: 'SIGNATURE'
+        includeItems: true
 
 services:
   publications:
