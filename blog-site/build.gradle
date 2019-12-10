@@ -1,18 +1,17 @@
 plugins {
-    id "com.eden.orchidPlugin" version "0.17.6"
+    id "com.eden.orchidPlugin" version "0.18.0"
 }
 
 // 1. Include all the common plugins for blogging, and a theme
 dependencies {
-    orchidCompile "io.github.javaeden.orchid:OrchidBlog:0.18.0-SNAPSHOT"
-    orchidCompile "io.github.javaeden.orchid:OrchidFutureImperfect:0.18.0-SNAPSHOT"
-    orchidCompile "io.github.javaeden.orchid:OrchidSearch:0.18.0-SNAPSHOT"
-    orchidCompile "io.github.javaeden.orchid:OrchidPluginDocs:0.18.0-SNAPSHOT"
+    orchidCompile "io.github.javaeden.orchid:OrchidBlog:0.18.0"
+    orchidCompile "io.github.javaeden.orchid:OrchidFutureImperfect:0.18.0"
+    orchidCompile "io.github.javaeden.orchid:OrchidSearch:0.18.0"
+    orchidCompile "io.github.javaeden.orchid:OrchidPluginDocs:0.18.0"
 }
 
 // 2. Get Orchid from Jcenter
 repositories {
-    mavenLocal()
     jcenter()
     maven { url 'https://jitpack.io' }
 }
