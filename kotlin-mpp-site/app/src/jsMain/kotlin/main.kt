@@ -1,6 +1,6 @@
 package com.example
 
-actual object PlatformApplication : Application {
+class JsPlatformApplication : Application {
     override val version: String = "1.0.0"
     override val name: String = "Example Kotlin MPP Application (NodeJs)"
 
@@ -9,4 +9,8 @@ actual object PlatformApplication : Application {
             println("$i...")
         }
     }
+}
+
+actual object PlatformApplication {
+    actual val app: Application = JsPlatformApplication()
 }

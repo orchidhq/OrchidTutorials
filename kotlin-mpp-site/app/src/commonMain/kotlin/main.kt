@@ -23,15 +23,17 @@ interface Application {
     fun start(vararg args: String)
 }
 
-expect object PlatformApplication : Application
+expect object PlatformApplication {
+    val app: Application
+}
 
 /**
  * Run the ExampleApplication
  */
 fun main() {
     PlatformApplication.run {
-        println("Running ${PlatformApplication.name} version ${PlatformApplication.version}...")
-        PlatformApplication.start("3")
+        println("Running ${PlatformApplication.app.name} version ${PlatformApplication.app.version}...")
+        PlatformApplication.app.start("3")
         println("Finished!")
     }
 }

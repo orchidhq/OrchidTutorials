@@ -21,20 +21,65 @@ theme:
       itemId: 'Changelog'
     - type: 'separator'
       title: 'API Docs'
+
     - type: 'sourcedocPages'
       moduleType: 'kotlindoc'
+      moduleName: 'Common'
       node: 'classes'
       asSubmenu: true
-      submenuTitle: 'Classes'
+      submenuTitle: 'Common Classes'
     - type: 'sourcedocPages'
       moduleType: 'kotlindoc'
+      moduleName: 'Common'
       node: 'packages'
       asSubmenu: true
-      submenuTitle: 'Packages'
+      submenuTitle: 'Common Packages'
+
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      moduleName: 'JVM'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'JVM Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      moduleName: 'JVM'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'JVM Packages'
+
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      moduleName: 'JS'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'JS Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      moduleName: 'JS'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'JS Packages'
+
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      moduleName: 'Native'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'Native Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      moduleName: 'Native'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'Native Packages'
 
 kotlindoc:
-  sourceDirs:
-    - './../../../../app/src/main/kotlin'
+  modules:
+    - { name: 'Common', sourceDirs: ['./../../../../app/src/commonMain/kotlin']}
+    - { name: 'JVM',    sourceDirs: ['./../../../../app/src/commonMain/kotlin', './../../../../app/src/jvmMain/kotlin']}
+    - { name: 'JS',     sourceDirs: ['./../../../../app/src/commonMain/kotlin', './../../../../app/src/jsMain/kotlin']}
+    - { name: 'Native', sourceDirs: ['./../../../../app/src/commonMain/kotlin', './../../../../app/src/nativeMain/kotlin']}
   pages:
     menu:
       - type: 'sourcedocPageLinks'

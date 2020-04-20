@@ -2,7 +2,7 @@ package com.example
 
 import platform.posix.usleep
 
-actual object PlatformApplication : Application {
+class NativePlatformApplication : Application {
     override val version: String = "1.0.0"
     override val name: String = "Example Kotlin MPP Application (Native)"
 
@@ -12,4 +12,8 @@ actual object PlatformApplication : Application {
             usleep(1000.toUInt())
         }
     }
+}
+
+actual object PlatformApplication {
+    actual val app: Application = NativePlatformApplication()
 }
