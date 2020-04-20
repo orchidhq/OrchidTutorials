@@ -1,5 +1,7 @@
 
 site:
+  theme: 'Editorial'
+  baseUrl: 'http://username.github.io/project'
   about:
     siteName: Java Project
     siteDescription: This is a short description of this project.
