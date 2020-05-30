@@ -1,13 +1,13 @@
 plugins {
-    id("com.eden.orchidPlugin") version "0.20.0"
+    id("com.eden.orchidPlugin") version "0.21.0"
 }
 
 // 1. Include all official Orchid plugins and themes
 dependencies {
-    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidCore:0.20.0")
-    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidBsDoc:0.20.0")
-    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidPages:0.20.0")
-    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidAsciidoc:0.20.0")
+    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidCore:0.21.0")
+    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidBsDoc:0.21.0")
+    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidPages:0.21.0")
+    orchidRuntimeOnly("io.github.javaeden.orchid:OrchidAsciidoc:0.21.0")
 }
 
 // 2. Get Orchid from Jcenter

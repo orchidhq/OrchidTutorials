@@ -24,10 +24,10 @@ public protocol Application {
 }
 
 public class ExampleApplication : Application {
-    var version: String = "1.0.0"
-    var name: String = "Example Swift Application"
+    public var version: String = "1.0.0"
+    public var name: String = "Example Swift Application"
 
-    func start(_ args: String...) {
+    public func start(_ args: String...) {
         let iterations = Int(args[0]) ?? 0
 
         for i in 1...iterations {

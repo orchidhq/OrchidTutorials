@@ -76,10 +76,10 @@ theme:
 
 kotlindoc:
   modules:
-    - { name: 'Common', sourceDirs: ['./../../../../app/src/commonMain/kotlin']}
-    - { name: 'JVM',    sourceDirs: ['./../../../../app/src/commonMain/kotlin', './../../../../app/src/jvmMain/kotlin']}
-    - { name: 'JS',     sourceDirs: ['./../../../../app/src/commonMain/kotlin', './../../../../app/src/jsMain/kotlin']}
-    - { name: 'Native', sourceDirs: ['./../../../../app/src/commonMain/kotlin', './../../../../app/src/nativeMain/kotlin']}
+    - { name: 'Common', sourceDirs: ['./../../../../app/src/commonMain/kotlin']                             }
+    - { name: 'JVM',    sourceDirs: ['./../../../../app/src/jvmMain/kotlin'],    relatedModules: ['Common'] }
+    - { name: 'JS',     sourceDirs: ['./../../../../app/src/jsMain/kotlin'],     relatedModules: ['Common'] }
+    - { name: 'Native', sourceDirs: ['./../../../../app/src/nativeMain/kotlin'], relatedModules: ['Common'] }
   pages:
     menu:
       - type: 'sourcedocPageLinks'
